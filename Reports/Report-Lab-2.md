@@ -37,7 +37,7 @@ In order to show the execution you can implement a client class/type, which is j
 in which you can instantiate the types/classes. Another approach would be to write unit tests if you
 are familiar with them. The python code is presented in the Lab 2 folder. 
 
-Below is the image below graphically represents the finite automaton.
+The image below graphically represents the finite automaton.
 
 ![Image](Graph.jpg)
 
