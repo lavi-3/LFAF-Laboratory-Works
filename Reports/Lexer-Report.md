@@ -88,8 +88,14 @@ Unrecognized token: token name throws a ValueError if any of the aforementioned 
             else:
                 raise ValueError("Unrecognized token: {}".format(token)) 
   ```
-                
+ 
 A list of tokens, each of which is represented as a tuple containing the token type and the corresponding value, is the result of this code.
+
+Finally, the main file imports the Lexer class lastly from the "lexer" module. The sample code is then defined, and it consists of a few lines of code with variable declarations, expressions, and a print statement.
+
+The main() function creates a Lexer class instance and provides it with the sample code. To create a list of tokens, it then invokes the lexer object's "tokenize" method. It then loops through the tokens and prints each one one at a time.
+
+The 'if' statement at the end of the code checks whether the script is being executed as the main program or not. If it is, the main() function is called to execute the code.
 
 ## Conclusion
 In conclusion, lexical analysis, which entails dissecting the source code into smaller tokens and categorizing them, is a crucial component of programming language processing. A program known as a lexer or tokenizer conducts lexical analysis and produces a list of tokens that can be used in subsequent processing.
