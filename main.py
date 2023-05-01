@@ -7,7 +7,7 @@ from Grammar import Grammars
 from lexer import MathLexer
 from lexer import Lexer
 from os import name
-from ChomskyConverter import CNFConverter
+from CNFConverter import CNFConverter
 from UnitTester import UnitTester
 
 
