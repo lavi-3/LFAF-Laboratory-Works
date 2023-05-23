@@ -1,8 +1,7 @@
 # Report Laboratory 2 
-
-### Course: Formal Languages & Finite Automata
-
-### Elaborated by: Cozlov Valeria, FAF-213
+**Course:** Formal Languages & Finite Automata  
+**Author:** Cozlov Valeria \
+**Variant:** 13
 
 ## Theory
 
