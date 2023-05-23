@@ -3,7 +3,7 @@ class Parser:
         # Initialize the Parser object with a list of tokens
         self.tokens = tokens
         self.current_token = None
-        self.next()  # Set the first token as the current token
+        self.next()  # Set the first token as current token
 
     def next(self):
         # Move to the next token from the input list
