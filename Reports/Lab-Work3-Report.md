@@ -1,6 +1,8 @@
 # Topic: Lexer
-## Course: Formal Languages & Finite Automata
-### Author: Cozlov Valeria, FAF-213
+**Course:** Formal Languages & Finite Automata  
+**Author:** Cozlov Valeria \
+**Variant:** 13
+
 ## Theory 
 <p>
 In computer science and natural language processing, lexical analysis is a technique used to recognize and examine the individual words or tokens that make up a piece of text.
