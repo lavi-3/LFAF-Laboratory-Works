@@ -1,14 +1,11 @@
-import matplotlib.pyplot as plt
-import networkx as nx
 import unittest
 from Automaton import Automaton
 from FiniteAutomaton import FiniteAutomaton
-from Grammar import Grammars
-from lexer import MathLexer
+from Grammar import Grammar
 from lexer import Lexer
 from os import name
 from CNFConverter import CNFConverter
-from UnitTester import UnitTester
+from Tester import UnitTester
 
 
 class Main:
@@ -56,35 +53,33 @@ if __name__ == '__main__':
 
 # LABORATORY WORK 2
 is_deterministic = automation.deterministinize()
-    print(f"Is automaton deterministic? {is_deterministic}")
+print(f"Is automaton deterministic? {is_deterministic}")
 
-    # Convert NDFA to DFA
-    dfa = automation.convertToDFA()
-    print(f"DFA states: {dfa.states}")
-    print(f"DFA transition function: {dfa.transitions}")
-    print(f"DFA initial state: {dfa.start_state}")
-    print(f"DFA final states: {dfa.accept_states}")
+# Convert NDFA to DFA
+dfa = automation.convertToDFA()
+print(f"DFA states: {dfa.states}")
+print(f"DFA transition function: {dfa.transitions}")
+print(f"DFA initial state: {dfa.start_state}")
+print(f"DFA final states: {dfa.accept_states}")
 
-    # Convert automaton to regular grammar
-    grammar = automation.convertGrammar()
-    print(f"Regular grammar productions: {grammar}")
-    print(main.grammar.chomsky())
-    automation.render()
+# Convert automaton to regular grammar
+grammar = automation.convertGrammar()
+print(f"Regular grammar productions: {grammar}")
+print(main.grammar.chomsky())
+automation.render()
 
 
 # LABORATORY WORK 3
-def main():
-    sample_code = """
+sample_code = """
     var x = 42;
     var y = x + 5;
     print(y);
     """
-    lexer = Lexer(sample_code)
-    tokens = lexer.tokenize()
+lexer = Lexer(sample_code)
+tokens = lexer.tokenize()
 
-    for token in tokens:
-        print(token)
-
+for token in tokens:
+    print(token)
 
 if name == "main":
     main()
@@ -122,3 +117,14 @@ print("All tests passed")
 
 # Run unit tests
 unittest.main()
+
+# LABORATORY WORK 5
+
+
+main_obj.process_expression("""
+    var x = 42;
+    var y = x + 5;
+    print(y);""")
+
+if __name__ == '__main__':
+    main()
