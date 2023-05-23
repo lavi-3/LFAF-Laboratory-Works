@@ -16,6 +16,7 @@ P={
 9. D → BA
 10. C → BA}
 ## Theory
+<p>
 Parsing is the process of obtaining syntactic meaning from a given text, such as a programming language expression. Building a hierarchical structure to depict the relationships between the text's many components includes evaluating the text. The term "parse tree" refers to this hierarchical arrangement.
 
 The Abstract Syntax Tree is another helpful illustration of the text's structure in addition to the parse tree (AST). The AST abstracts away superfluous details while capturing the text's important components. It arranges the text's elements in layers of abstraction that match to the constructs or entities of the original text.
@@ -55,9 +56,9 @@ A factor, which can be either a numeric number or an enclosed expression contain
 Interpreter class is responsible for interpreting a parse tree and performing calculations based on its nodes. Here's an explanation of what the code does:
 The Interpreter class has an __init__ method that initializes an empty dictionary self.variables to store variables.
 The interpret method takes a parse tree as input and interprets it to compute a result. It starts by extracting the type of the root node from the parse tree.
-•	If the node type is 'NUM', it means the node represents a numeric value. The method returns the numeric value by converting it to a float.
-•	If the node type is 'ADD', 'SUB', 'MUL', or 'DIV', it means the node represents an arithmetic operation. The method recursively interprets the left and right children of the node by calling the interpret method on them. It then performs the corresponding arithmetic operation (+, -, *, /) on the computed values and returns the result.
-•	If an invalid node type is encountered, the method raises a ValueError with a message indicating the invalid node type.
+-	If the node type is 'NUM', it means the node represents a numeric value. The method returns the numeric value by converting it to a float.
+-	If the node type is 'ADD', 'SUB', 'MUL', or 'DIV', it means the node represents an arithmetic operation. The method recursively interprets the left and right children of the node by calling the interpret method on them. It then performs the corresponding arithmetic operation (+, -, *, /) on the computed values and returns the result.
+- If an invalid node type is encountered, the method raises a ValueError with a message indicating the invalid node type.
 In summary, the Interpreter class provides functionality to interpret a parse tree and perform calculations based on its nodes. It supports numeric values and basic arithmetic operations. When given a valid parse tree, the interpret method evaluates the expression represented by the tree and returns the computed result.
 
 
