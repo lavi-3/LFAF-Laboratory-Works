@@ -35,5 +35,5 @@ class Interpreter:
             right_value = self.interpret(tree[2])
             return left_value / right_value
 
-        # If an invalid node type is encountered, raise a ValueError
+        # If an invalid node type is encountered, raise ValueError
         raise ValueError(f"Invalid node type: {node_type}")
